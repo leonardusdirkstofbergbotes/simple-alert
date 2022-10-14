@@ -1,0 +1,47 @@
+.toast-notification {
+    position: fixed;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: flex;
+
+    strong {
+        margin-left: 1.5rem;
+        cursor: pointer;
+    }
+
+    &.open {
+        opacity: 1;
+    }
+
+    &.warn {
+        background-color: #f15e7c;
+    }
+
+    &.info {
+        background-color: #5e80f1;
+    }
+
+    &.success {
+        background-color: #5ef18f;
+    }
+
+    &.bottom-left {
+        bottom: 1rem; left: 1rem;
+    }
+
+    &.bottom-right {
+        bottom: 1rem; right: 1rem;
+    }
+
+    &.top-left {
+        top: 1rem; left: 1rem;
+    }
+
+    &.top-right {
+        top: 1rem; right: 1rem;
+    }
+}

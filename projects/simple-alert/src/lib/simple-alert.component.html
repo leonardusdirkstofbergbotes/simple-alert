@@ -1,0 +1,4 @@
+<div class="toast-notification" [class.open]="message !== null" [class]="position">
+    <span>{{ message }}</span>
+    <strong (click)="message = null">&#x2715;</strong>
+</div>
